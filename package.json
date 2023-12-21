@@ -1,0 +1,20 @@
+{
+    "name": "website_python",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "build": "echo \"No build specified\" && exit 1",
+        "test": "echo \"No test specified\" && exit 1",
+        "start": "node index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/s5weop/website_python.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/s5weop/website_python/issues"
+    },
+    "homepage": "https://github.com/s5weop/website_python#readme"
+}
