@@ -1,7 +1,16 @@
 from flask import Flask, render_template, url_for, request, redirect
-from test import get_response_GPT
+from g4f import ChatCompletion, models
 
 app = Flask(__name__)
+
+
+def get_response_GPT(request_for_GPT):
+    response = ChatCompletion.create(
+        model=models.gpt_35_turbo,
+        messages=[{"role": "user", "content": request_for_GPT}],
+        proxy="http://host:port"
+    )
+    return response
 
 
 @app.route('/')
@@ -32,12 +41,12 @@ def fourth():
 @app.route('/support', methods=['POST', 'GET'])
 def support():
     if request.method == 'POST':
-        global request_for_GPT
         request_for_GPT = request.form['request_user']
         answer_gpt = get_response_GPT(request_for_GPT)
         return render_template('support.html', answer_gpt=answer_gpt)
     else:
         return render_template('support.html', answer_gpt='Hello, I am bot helper!')
+
 
 @app.route('/about')
 def about():
@@ -45,4 +54,4 @@ def about():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
