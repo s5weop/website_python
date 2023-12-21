@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+
+{% block title %}
+4
+{% endblock %}
+
+{% block body %}
+<div class="container" align="center">
+    <h2>Таблица конструкций в Python</h2>
+</div><br>
+<div class="container">
+    <table class="table table-bordered align-middle">
+        <thead>
+        <tr>
+            <th scope="col">Конструкция</th>
+            <th scope="col">Перевод</th>
+            <th scope="col">Общая конструкция<br>(Все конструкции могут быть вложенными)</th>
+            <th scope="col">Пример</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">Условный оператор <b>if-elif-else</b></th>
+            <td>if - если<br>elif - иначе если<br>else - иначе</td>
+            <td><b>if</b> условие:<br>&#160;&#160;&#160;&#160;команды()<br><b>elif</b>
+                условие:<br>&#160;&#160;&#160;&#160;команды()<br><b>else:</b><br>&#160;&#160;&#160;&#160;команды()
+            </td>
+            <td>rating = int(input("Введите вашу оценку"))<br>if rating < 3:<br>&#160;&#160;&#160;&#160;print('Плохо')<br>
+                elif rating == 3:<br>&#160;&#160;&#160;&#160;print('Нормально')<br>
+                elif rating == 4:<br>&#160;&#160;&#160;&#160;print('Хорошо')<br>
+                else:<br>&#160;&#160;&#160;&#160;print('Отлично')
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">Цикл <b>while</b></th>
+            <td>while - пока</td>
+            <td><b>while</b> условие:<br>&#160;&#160;&#160;&#160;команды()</td>
+            <td>while True:<br>&#160;&#160;&#160;&#160;print('Hello')<br>
+                while action != 'off':<br>&#160;&#160;&#160;&#160;action = input('off - завершить')
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">Цикл <b>for</b></th>
+            <td>for - для</td>
+            <td><b>for</b> элемент in последовательность:<br>&#160;&#160;&#160;&#160;команды()<br><b>for</b> i in range(n,m):<br>&#160;&#160;&#160;&#160;команды()</td>
+            <td>for i in range(3):<br>&#160;&#160;&#160;&#160;print('Hello')</td>
+        </tr>
+        <tr>
+            <td colspan = "4">В циклах могут использоваться один из двух операторов: <b>break</b> для досрочного выхода из цикла или <b>continue</b> для перехода к следующей итерации цикла.</td>
+        </tr>
+        <tr>
+            <th scope="row">Объявление функции <b>def</b></th>
+            <td>definition или define - объявить</td>
+            <td><b>def</b> имя_функции(аргумент, аргумент):<br>&#160;&#160;&#160;&#160;команды()<br>имя_функции()</td>
+            <td><b>def</b> double(x):<br>&#160;&#160;&#160;&#160;result = x+x<br>&#160;&#160;&#160;&#160;<b>return</b> result<br>number = int(input('Введите число'))<br>
+                print('Удвоенное число:', double(number))</td>
+        </tr>
+        </tbody>
+    </table>
+</div><br>
+<div class="container">
+    <ul class="pagination pagination-lg flex-wrap justify-content-center">
+        <li class="page-item">
+            <a class="page-link" href="/3">Назад</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="/1">1</a></li>
+        <li class="page-item"><a class="page-link" href="/2">2</a></li>
+        <li class="page-item"><a class="page-link" href="/3">3</a></li>
+        <li class="page-item active" aria-current="page">
+            <a class="page-link" href="/4">4</a>
+        </li>
+        <li class="page-item disabled">
+            <a class="page-link">Вперед</a>
+        </li>
+    </ul>
+</div>
+{% endblock %}

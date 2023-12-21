@@ -1,0 +1,143 @@
+{% extends 'base.html' %}
+
+{% block title %}
+2
+{% endblock %}
+
+{% block body %}
+<div class="container" align="center">
+    <h2>Таблица операторов сравнения в Python</h2>
+</div><br>
+<div class="container">
+    <table class="table table-bordered align-middle">
+        <thead>
+        <tr>
+            <th scope="col">Оператор</th>
+            <th scope="col">Необходим для сравнения левой и правой части на:</th>
+            <th scope="col">Пример (Истина - <b>True</b>, Ложь - <b>False</b>)</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row"> ==</th>
+            <td>Равность</td>
+            <td>Условие истинно если левая и правая части равны</td>
+        </tr>
+        <tr>
+            <th scope="row"> !=</th>
+            <td>Не Равность</td>
+            <td>Условие истинно если левая и правая части не равны</td>
+        </tr>
+        <tr>
+            <th scope="row"> ></th>
+            <td>Левое Больше Правого?</td>
+            <td>Условие истинно если левая часть больше правой части</td>
+        </tr>
+        <tr>
+            <th scope="row"> <</th>
+            <td>Левое Меньше Правого?</td>
+            <td>Условие истинно если левая часть меньше правой части</td>
+        </tr>
+        <tr>
+            <th scope="row"> >=</th>
+            <td>Левое Больше или Равно Правому?</td>
+            <td>Условие истинно если левая часть больше или равна правой части</td>
+        </tr>
+        <tr>
+            <th scope="row"> <=</th>
+            <td>Левое Меньше или Равно Правому?</td>
+            <td>Условие истинно если левая часть меньше или равна правой части</td>
+        </tr>
+        </tbody>
+    </table>
+</div><br>
+<div class="container" align="center">
+    <h2>Таблица логических операторов в Python</h2>
+</div><br>
+<div class="container">
+    <table class="table table-bordered align-middle">
+        <thead>
+        <tr>
+            <th scope="col">Оператор</th>
+            <th scope="col">Название (Перевод)</th>
+            <th scope="col">Пример (Истина - True, Ложь - False)</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">and</th>
+            <td>И<br>Логическое умножение</td>
+            <td>Условие истинно если левая И правая части истинны</td>
+        </tr>
+        <tr>
+            <th scope="row">or</th>
+            <td>ИЛИ<br>Логическое сложение</td>
+            <td>Условие истинно если:<br>1. левая ИЛИ правая часть истинна<br>2. ИЛИ левая ИЛИ правая часть истинна</td>
+        </tr>
+        <tr>
+            <th scope="row">not</th>
+            <td>НЕ<br>Логическое отрицание</td>
+            <td>Условие истинно если выражение НЕ истинно</td>
+        </tr>
+        </tbody>
+    </table>
+</div><br>
+<div class="container" align="center">
+    <h2>Таблица уникальных операторов в Python</h2>
+</div><br>
+<div class="container">
+    <table class="table table-bordered align-middle">
+        <thead>
+        <tr>
+            <th scope="col">Оператор</th>
+            <th scope="col">Название (Перевод)</th>
+            <th scope="col">Необходим для</th>
+            <th scope="col">Пример</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">=</th>
+            <td>Присваивание</td>
+            <td>Присваивания переменной слева значения справа</td>
+            <td>num = 5<br>в переменную <b>num</b> сохранится число <b>5</b></td>
+        </tr>
+        <tr>
+            <th scope="row">in</th>
+            <td>В</td>
+            <td>1. Если в цикле for:<br>Присваивания переменной слева значения элемента последовательности справа<br>2.
+                Если в условии (логическом выражении):<br>Нахождения элемента слева в последовательности справа
+            </td>
+            <td>1. for i <b>in</b> range (2):<br>переменная і поочередно примет значения <b>0 1 2</b> на каждом выполнении тела
+                цикла<br>2. if symbol <b>in</b> word:<br>выражение будет истинным(условие выполнится), если в строке <b>word</b> есть
+                символ <b>symbol</b>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">string[n,m]</th>
+            <td>Срез</td>
+            <td>Нахождения символа или последовательности<br>символов в строке по индексу</td>
+            <td>string = 'apple'<br>symbol = string[0]<br>в переменную <b>symbol</b> сохранится строка <b>'a'</b><br>word =
+                string[1,4]<br>в переменную <b>word</b> сохранится строка <b>'ppl'</b>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div><br>
+<div class="container">
+    <ul class="pagination pagination-lg flex-wrap justify-content-center">
+        <li class="page-item">
+            <a class="page-link" href="/1">Назад</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="/1">1</a></li>
+        <li class="page-item active" aria-current="page">
+            <a class="page-link" href="/2">2</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="/3">3</a></li>
+        <li class="page-item"><a class="page-link" href="/4">4</a></li>
+        <li class="page-item">
+            <a class="page-link" href="/3">Вперед</a>
+        </li>
+    </ul>
+</div>
+{% endblock %}

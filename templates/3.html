@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+
+{% block title %}
+3
+{% endblock %}
+
+{% block body %}
+<div class="container" align="center">
+    <h2>Таблица функций в Python</h2>
+</div><br>
+<div class="container">
+    <table class="table table-bordered align-middle">
+        <thead>
+        <tr>
+            <th scope="col">Функция</th>
+            <th scope="col">Перевод</th>
+            <th scope="col">Назначение</th>
+            <th scope="col">Пример</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">print()</th>
+            <td>Печать</td>
+            <td>Выводит или печатает информацию на экран</td>
+            <td>print("Hello world") - напечатает на экран надпись Hello world</td>
+        </tr>
+        <tr>
+            <th scope="row">input()</th>
+            <td>Ввод</td>
+            <td>1. Выводит на экран подсказку, что нужно ввести пользователю.<br>2. Возвращает то, что пользователь ввел
+                с клавиатуры.<br>3. Всегда возвращается строковый "тип ланных"
+            </td>
+            <td>number = input("Введите число")<br>сначала на экран выведется надпись <b>Введите число</b><br>потом появится
+                поле куда можно ввести текст с клавиатуры, далее введенный текст сохраняется в переменную <b>number</b>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">int()</th>
+            <td>Целое</td>
+            <td>Меняет тип данных получаемого значения на целочисленный</td>
+            <td>number = int(input("Введите число"))<br><u>возвращаемое</u> значение с <u>клавиатуры</u> будет преобразовано в
+                <u>целочисленный</u> тип данных и сохранено в переменную <b>number</b><br>т. е. число 5 полученное при помощи input
+                будет восприниматься Python-ом в кавычках <b>"5"</b>, a <b>int</b> эти кавычки <b>уберет</b>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">str()</th>
+            <td>Строковое</td>
+            <td>Меняет тип данных получаемого значения на строковый</td>
+            <td>Если в программе нужно объединить строки и числами в одну строку<br>name = str(5) + "_Иван"<br>в
+                результате в переменную <b>name</b> сохранится "5_Иван"
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">len()</th>
+            <td>Длина</td>
+            <td>Возвращает длину последовательности</td>
+            <td>string = "Hello world"<br>result = len(stroka) -> в переменную result сохранится число 11</td>
+        </tr>
+        <tr>
+            <th scope="row">range()</th>
+            <td>Диапазон</td>
+            <td>Возвращает последовательность от 0 до заданного числа, не включая само число, но так же можно указать
+                начальное число
+            </td>
+            <td>range(5) -> вернет 0, 1, 2, 3, 4<br><b>*range(2, 5) -> вернет 2, 3, 4</b> - возможный вариант использования
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div><br>
+<div class="container">
+    <ul class="pagination pagination-lg flex-wrap justify-content-center">
+        <li class="page-item">
+            <a class="page-link" href="/2">Назад</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="/1">1</a></li>
+        <li class="page-item"><a class="page-link" href="/2">2</a></li>
+        <li class="page-item active" aria-current="page">
+            <a class="page-link" href="/3">3</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="/4">4</a></li>
+        <li class="page-item">
+            <a class="page-link" href="/4">Вперед</a>
+        </li>
+    </ul>
+</div>
+{% endblock %}

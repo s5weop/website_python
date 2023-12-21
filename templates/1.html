@@ -1,0 +1,121 @@
+{% extends 'base.html' %}
+
+{% block title %}
+1
+{% endblock %}
+
+{% block body %}
+<div class="container" align="center">
+    <h2>Таблица арифметических операторов в Python</h2>
+</div><br>
+<div class="container">
+    <table class="table table-bordered align-middle">
+        <thead>
+        <tr>
+            <th scope="col">Оператор</th>
+            <th scope="col">Название</th>
+            <th scope="col">Необходим для</th>
+            <th scope="col">Пример</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">+</th>
+            <td>Сложение</td>
+            <td>Сложения чисел или объединения строки слева и справа</td>
+            <td><b>num</b> = 5+5<br>в переменную <b>num</b> сохранится число <b>10</b><br><b>num</b> = '5' + 'привет'<br>в переменную <b>num</b> сохранится
+                строка <b>'5привет'</b>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">-</th>
+            <td>Вычитание</td>
+            <td>Вычитания чисел</td>
+            <td><b>num</b> = 5-3<br>в переменную <b>num</b> сохранится число <b>2</b></td>
+        </tr>
+        <tr>
+            <th scope="row">*</th>
+            <td>Умножение</td>
+            <td>Умножения чисел или умножения числа на строку</td>
+            <td><b>num</b> = 5*5<br>в переменную <b>num</b> сохранится число <b>25</b><br><b>num</b> = 2 * 'привет'<br>в переменную <b>num</b> сохранится
+                строка <b>'приветпривет'</b>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">/</th>
+            <td>Деление</td>
+            <td>Деления чисел</td>
+            <td><b>num</b> = 6/3<br>в переменную <b>num</b> сохранится число <b>2</b></td>
+        </tr>
+        <tr>
+            <th scope="row">**</th>
+            <td>Возведение в степень</td>
+            <td>Возведения числа слева в степень справа</td>
+            <td><b>num</b> = 3**2<br>в переменную <b>num</b> сохранится число <b>9</b></td>
+        </tr>
+        <tr>
+            <th scope="row">%</th>
+            <td>Деление с остатком</td>
+            <td>Нахождения остатка от деления числа слева на число справа</td>
+            <td><b>num</b> = 5%2<br>в переменную <b>num</b> сохранится число <b>1</b></td>
+        </tr>
+        <tr>
+            <th scope="row">//</th>
+            <td>Деление без остатка</td>
+            <td>Нахождение частного от деления числа слева на число справа</td>
+            <td><b>num</b> = 5//2<br>в переменную <b>num</b> сохранится число <b>2</b></td>
+        </tr>
+        </tbody>
+    </table>
+</div><br>
+<div class="container" align="center">
+    <h2>Таблица методов в Python</h2>
+</div><br>
+<div class="container">
+    <table class="table table-bordered align-middle">
+        <thead>
+        <tr>
+            <th scope="col">Метод</th>
+            <th scope="col">Перевод</th>
+            <th scope="col">Назначение</th>
+            <th scope="col">Пример</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">str.lower()</th>
+            <td>Ниже</td>
+            <td>создает копию строки, в которой все<br>символы нижнего регистра (маленькие)</td>
+            <td>original = "Hello World"<br>lowercased = original.lower -> в переменную <b>lowercased</b> сохранится <b>hello world</b>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">str.find()</th>
+            <td>Поиск</td>
+            <td>этот метод говорит нам на какой позиции<br>(или индексе) находится первый символ,<br>совпадения которого
+                мы ищем
+            </td>
+            <td>sentence = "Пример использования <u>метода</u> find() в Python"<br>index = sentence.find("<u>метод</u>") -> в
+                переменную <b>index</b> сохранится <b>21</b><br>Индекс (позиция) первого вхождения слова 'метод': 21
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div><br>
+<div class="container">
+    <ul class="pagination pagination-lg flex-wrap justify-content-center">
+        <li class="page-item disabled">
+            <a class="page-link">Назад</a>
+        </li>
+        <li class="page-item active" aria-current="page">
+            <a class="page-link" href="/1">1</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="/2">2</a></li>
+        <li class="page-item"><a class="page-link" href="/3">3</a></li>
+        <li class="page-item"><a class="page-link" href="/4">4</a></li>
+        <li class="page-item">
+            <a class="page-link" href="/2">Вперед</a>
+        </li>
+    </ul>
+</div>
+{% endblock %}

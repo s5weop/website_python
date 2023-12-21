@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Главная
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h1 align="center">Справочные материалы по Python</h1><br>
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <a class="btn btn-outline-secondary btn-lg" style="padding:20px;margin-bottom:10px" role="button" href="/1">Арифметические операторы и методы<br></a>
+        <a class="btn btn-outline-secondary btn-lg" style="padding:20px;margin-bottom:10px" role="button" href="/2">Операторы сравнения и уникальные операторы</a>
+        <a class="btn btn-outline-secondary btn-lg" style="padding:20px;margin-bottom:10px" role="button" href="/3">Функции</a>
+        <a class="btn btn-outline-secondary btn-lg" style="padding:20px;margin-bottom:10px" role="button" href="/4">Конструкции</a>
+        <a class="btn btn-primary btn-lg" style="padding:20px;" role="button" href="/support">Помощь</a>
+    </div>
+</div>
+<div class="container" style="width:35%; padding-top:20px">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <p class="col-md-4 mb-0 text-body-secondary">© 2023</p>
+
+        <a href="/"
+           class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        </a>
+
+        <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="/about" class="nav-link px-2 text-body-secondary">Обо мне</a></li>
+        </ul>
+    </footer>
+</div>
+{% endblock %}
